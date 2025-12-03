@@ -9,29 +9,37 @@
 </head>
 
 <body class="bg-[#E8EDED] m-0 p-0">
-    <!-- Header -->
-    <header class="bg-teal-500 py-5 px-4 shadow-lg">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                    <span class="text-xl font-bold text-teal-500">c</span>
+
+    <header class="bg-[#2E7581] ">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between max-w-6xl mx-auto">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20a9 9 0 100-18 9 9 0 000 18z"></path>
+                        <path d="M8 12h8"></path>
+                        <path d="M12 8v8"></path>
+                    </svg>
+                    <span class="text-4xl font-bold text-black">coLearn</span>
                 </div>
-                <h1 class="text-3xl md:text-4xl font-bold text-black">coLearn</h1>
+                <div class="hidden md:flex items-center space-x-8 text-white">
+                    <a href="#" class="hover:text-white/80 transition text-2xl font-bold">Les cours</a>
+                    <a href="#" class="hover:text-white/80 transition text-2xl font-bold">Les tuteurs</a>
+                    <a href="#" class="hover:text-white/80 transition text-2xl font-bold">À propos</a>
+                </div>
+                <button class="bg-white/20 backdrop-blur-sm text-white p-2.5 rounded-full hover:bg-white/30 transition">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
             </div>
-            <nav class="hidden md:flex items-center gap-8">
-                <a href="#" class="text-white text-xl md:text-2xl font-bold hover:text-gray-200 transition">Les
-                    cours</a>
-                <a href="#" class="text-white text-xl md:text-2xl font-bold hover:text-gray-200 transition">Les
-                    tuteurs</a>
-                <a href="#"
-                    class="text-white text-xl md:text-2xl font-bold hover:text-gray-200 transition">Statistiques</a>
-            </nav>
-            <div class="w-12 h-12 bg-gray-300 rounded-full"></div>
-        </div>
+        </nav>
     </header>
 
 
-    <div class="max-w-7xl mx-auto px-4 mt-8">
+    <div class="max-w-7xl mx-auto px-4 mt-20">
         <div
             class="bg-gradient-to-r from-cyan-800/60 to-teal-400/60 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <p class="text-xl md:text-2xl lg:text-3xl text-black text-center md:text-left">
@@ -71,143 +79,189 @@
         <div class="absolute rounded-full bg-gradient-to-b from-[#3CBEC4] to-[#256F7C] -z-10 pointer-events-none"
             style="width: 2455px; height: 2525px; left: -550px; top: 200px;">
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <section class="w-full mx-auto px-4 pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-            <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition">
-                <div class="flex items-start gap-4 mb-4">
-                    <div class="w-20 h-20 md:w-24 md:h-24 bg-gray-300 rounded-full flex-shrink-0"></div>
-                    <div class="flex-1">
-                        <h3 class="text-xl md:text-2xl font-semibold text-black">Mariem bo</h3>
-                        <div class="flex items-center gap-2 mt-2">
-                            <span class="text-lg md:text-xl">⭐ 4.5</span>
-                            <span class="text-lg md:text-xl">👥 35</span>
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full flex-shrink-0 overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Mariem bo"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-semibold text-black">Mariem bo</h3>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="text-lg md:text-xl">⭐ 4.5</span>
+                                    <span class="text-lg md:text-xl">👥 35</span>
+                                </div>
+                            </div>
                         </div>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
+                            Étudiant en ingénierie logicielle, passionné par le développement web. J'aide les étudiants
+                            à
+                            maîtriser Java, Python et les bases d'algorithmes avec des explications simples et des
+                            exercices pratiques.
+                        </p>
                     </div>
+                    <button
+                        class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition mt-4">
+                        Voir plus
+                    </button>
                 </div>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
-                    Étudiant en ingénierie logicielle, passionné par le développement web. J'aide les étudiants à
-                    maîtriser Java, Python et les bases d'algorithmes avec des explications simples et des exercices
-                    pratiques.
-                </p>
-                <button
-                    class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition">
-                    Voir plus
-                </button>
-            </div>
 
-
-            <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition">
-                <div class="flex items-start gap-4 mb-4">
-                    <div class="w-20 h-20 md:w-24 md:h-24 bg-gray-300 rounded-full flex-shrink-0"></div>
-                    <div class="flex-1">
-                        <h3 class="text-xl md:text-2xl font-semibold text-black">Fatma ba</h3>
-                        <div class="flex items-center gap-2 mt-2">
-                            <span class="text-lg md:text-xl">⭐ 4.5</span>
-                            <span class="text-lg md:text-xl">👥 35</span>
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full flex-shrink-0 overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Fatma ba"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-semibold text-black">Fatma ba</h3>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="text-lg md:text-xl">⭐ 4.5</span>
+                                    <span class="text-lg md:text-xl">👥 35</span>
+                                </div>
+                            </div>
                         </div>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
+                            Étudiante en 2ᵉ année, j'explique Java avec des exemples simples : variables, boucles,
+                            méthodes,
+                            tableaux, et logique de base. Idéal pour ceux qui débutent ou qui veulent réviser avant un
+                            contrôle.
+                        </p>
                     </div>
+                    <button
+                        class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition mt-4">
+                        Voir plus
+                    </button>
                 </div>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
-                    Étudiante en 2ᵉ année, j'explique Java avec des exemples simples : variables, boucles, méthodes,
-                    tableaux, et logique de base. Idéal pour ceux qui débutent ou qui veulent réviser avant un contrôle.
-                </p>
-                <button
-                    class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition">
-                    Voir plus
-                </button>
-            </div>
 
-
-            <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition">
-                <div class="flex items-start gap-4 mb-4">
-                    <div class="w-20 h-20 md:w-24 md:h-24 bg-gray-300 rounded-full flex-shrink-0"></div>
-                    <div class="flex-1">
-                        <h3 class="text-xl md:text-2xl font-semibold text-black">Amine A</h3>
-                        <div class="flex items-center gap-2 mt-2">
-                            <span class="text-lg md:text-xl">⭐ 4.5</span>
-                            <span class="text-lg md:text-xl">👥 35</span>
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full flex-shrink-0 overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/men/70.jpg" alt="Amine A"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-semibold text-black">Amine A</h3>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="text-lg md:text-xl">⭐ 4.5</span>
+                                    <span class="text-lg md:text-xl">👥 35</span>
+                                </div>
+                            </div>
                         </div>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
+                            Étudiant en ingénierie logicielle, passionné par la POO. J'aide les étudiants à comprendre
+                            les
+                            classes, interfaces, héritage, et à structurer leurs projets Java étape par étape.
+                        </p>
                     </div>
+                    <button
+                        class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition mt-4">
+                        Voir plus
+                    </button>
                 </div>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
-                    Étudiant en ingénierie logicielle, passionné par la POO. J'aide les étudiants à comprendre les
-                    classes, interfaces, héritage, et à structurer leurs projets Java étape par étape.
-                </p>
-                <button
-                    class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition">
-                    Voir plus
-                </button>
-            </div>
 
-
-            <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition">
-                <div class="flex items-start gap-4 mb-4">
-                    <div class="w-20 h-20 md:w-24 md:h-24 bg-gray-300 rounded-full flex-shrink-0"></div>
-                    <div class="flex-1">
-                        <h3 class="text-xl md:text-2xl font-semibold text-black">Ahmed R</h3>
-                        <div class="flex items-center gap-2 mt-2">
-                            <span class="text-lg md:text-xl">⭐ 4.5</span>
-                            <span class="text-lg md:text-xl">👥 35</span>
+                <!-- Card 4 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full flex-shrink-0 overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Ahmed R"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-semibold text-black">Ahmed R</h3>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="text-lg md:text-xl">⭐ 4.5</span>
+                                    <span class="text-lg md:text-xl">👥 35</span>
+                                </div>
+                            </div>
                         </div>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
+                            Étudiant en informatique, spécialisé dans les listes, piles, files, arbres et algorithmes.
+                            Je t'aide
+                            à comprendre comment ces structures fonctionnent et comment les implémenter en Java.
+                        </p>
                     </div>
+                    <button
+                        class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition mt-4">
+                        Voir plus
+                    </button>
                 </div>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
-                    Étudiant en informatique, spécialisé dans les listes, piles, files, arbres et algorithmes. Je t'aide
-                    à comprendre comment ces structures fonctionnent et comment les implémenter en Java.
-                </p>
-                <button
-                    class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition">
-                    Voir plus
-                </button>
-            </div>
 
-
-            <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition">
-                <div class="flex items-start gap-4 mb-4">
-                    <div class="w-20 h-20 md:w-24 md:h-24 bg-gray-300 rounded-full flex-shrink-0"></div>
-                    <div class="flex-1">
-                        <h3 class="text-xl md:text-2xl font-semibold text-black">Chedli T</h3>
-                        <div class="flex items-center gap-2 mt-2">
-                            <span class="text-lg md:text-xl">⭐ 4.5</span>
-                            <span class="text-lg md:text-xl">👥 35</span>
+                <!-- Card 5 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full flex-shrink-0 overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Chedli T"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-semibold text-black">Chedli T</h3>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="text-lg md:text-xl">⭐ 4.5</span>
+                                    <span class="text-lg md:text-xl">👥 35</span>
+                                </div>
+                            </div>
                         </div>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
+                            Étudiant sérieux et patient, je t'aide à maîtriser la gestion d'erreurs, la lecture/écriture
+                            de
+                            fichiers, et les concepts essentiels pour réussir les TPs de Java.
+                        </p>
                     </div>
+                    <button
+                        class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition mt-4">
+                        Voir plus
+                    </button>
                 </div>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
-                    Étudiant sérieux et patient, je t'aide à maîtriser la gestion d'erreurs, la lecture/écriture de
-                    fichiers, et les concepts essentiels pour réussir les TPs de Java.
-                </p>
-                <button
-                    class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition">
-                    Voir plus
-                </button>
-            </div>
 
-
-            <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition">
-                <div class="flex items-start gap-4 mb-4">
-                    <div class="w-20 h-20 md:w-24 md:h-24 bg-gray-300 rounded-full flex-shrink-0"></div>
-                    <div class="flex-1">
-                        <h3 class="text-xl md:text-2xl font-semibold text-black">Seif bo</h3>
-                        <div class="flex items-center gap-2 mt-2">
-                            <span class="text-lg md:text-xl">⭐ 4.5</span>
-                            <span class="text-lg md:text-xl">👥 35</span>
+                <!-- Card 6 -->
+                <div
+                    class="bg-white rounded-3xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full flex-shrink-0 overflow-hidden">
+                                <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Seif bo"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-semibold text-black">Seif bo</h3>
+                                <div class="flex items-center gap-2 mt-2">
+                                    <span class="text-lg md:text-xl">⭐ 4.5</span>
+                                    <span class="text-lg md:text-xl">👥 35</span>
+                                </div>
+                            </div>
                         </div>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
+                            Étudiant en 3ᵉ année, je t'apprends comment passer d'un diagramme UML à un code Java propre.
+                            Je
+                            t'aide aussi à modéliser tes projets et à suivre une logique claire pour tes classes.
+                        </p>
                     </div>
+                    <button
+                        class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition mt-4">
+                        Voir plus
+                    </button>
                 </div>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
-                    Étudiant en 3ᵉ année, je t'apprends comment passer d'un diagramme UML à un code Java propre. Je
-                    t'aide aussi à modéliser tes projets et à suivre une logique claire pour tes classes.
-                </p>
-                <button
-                    class="w-full bg-teal-500 text-white text-lg md:text-xl font-bold py-3 rounded-3xl shadow hover:bg-teal-600 transition">
-                    Voir plus
-                </button>
+
             </div>
+        </section>
 
-        </div>
 
-        <!-- See More Button -->
         <div class="flex justify-center mt-12">
             <button
                 class="bg-white border-2 border-cyan-800 text-cyan-900 text-xl md:text-2xl font-bold px-8 py-4 rounded-3xl hover:bg-gray-50 transition flex items-center gap-2">
@@ -219,7 +273,7 @@
     </section>
 
 
-    <footer class="relative w-full mt-40">
+    <footer class="relative w-full ">
         <div class="absolute inset-0 flex justify-center -z-10">
             <div class="w-[150%] h-64 bg-cyan-800"></div>
         </div>

@@ -59,7 +59,6 @@ npm run dev
 │ ├── 📄 screen5.html # Écran 5
 │ ├── 📄 screen6.html # Écran 6
 │ ├── 📄 stat.html # Page des statistiques
-│ └── 📄 ... # Autres fichiers HTML
 ├── 📄 .gitignore # Fichiers ignorés par Git
 ├── 📄 package-lock.json # Verrouillage des dépendances
 ├── 📄 package.json # Configuration npm

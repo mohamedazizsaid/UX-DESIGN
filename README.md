@@ -40,15 +40,31 @@ npm run dev
 
 ### Structure de projet
 ```markdown
-UX-Design/
-├── src/
-│   ├── index.html          # Point d'entrée HTML
-│   └── input.css           # Fichier CSS source avec directives Tailwind
-├── dist/
-│   └── output.css          # Fichier CSS généré (automatique)
-├── package.json            # Dépendances et scripts
-├── tailwind.config.js      # Configuration Tailwind
-└── postcss.config.js       # Configuration PostCSS
+├── 📁 dist/ # Fichiers de production compilés
+├── 📁 node_modules/ # Dépendances Node.js
+├── 📁 src/ # Code source principal
+│ ├── 📁 component/ # Composants réutilisables
+│ │ └── 📄 header.html # Composant header
+│ ├── 📁 images/ # Ressources images
+│ ├── 📄 Commentaire.html # Page des commentaires
+│ ├── 📄 Cours.html # Page des cours
+│ ├── 📄 dash.html # Tableau de bord
+│ ├── 📄 DetailCour.html # Détails d'un cours
+│ ├── 📄 historique.html # Page historique
+│ ├── 📄 index.html # Page d'accueil
+│ ├── 📄 input.css # Fichier CSS Tailwind source
+│ ├── 📄 profile.html # Page de profil
+│ ├── 📄 profiling1.html # Étape 1 de profilage
+│ ├── 📄 profiling2.html # Étape 2 de profilage
+│ ├── 📄 screen5.html # Écran 5
+│ ├── 📄 screen6.html # Écran 6
+│ ├── 📄 stat.html # Page des statistiques
+│ └── 📄 ... # Autres fichiers HTML
+├── 📄 .gitignore # Fichiers ignorés par Git
+├── 📄 package-lock.json # Verrouillage des dépendances
+├── 📄 package.json # Configuration npm
+├── 📄 postcss.config.js # Configuration PostCSS
+└── 📄 tailwind.config.js # Configuration Tailwind CSS
 ```
 ### 🛠️ Problèmes rencontrés et solutions
 

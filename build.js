@@ -15,7 +15,7 @@ fs.copySync('./src', './dist', {
 
 // Générer le CSS avec Tailwind
 try {
-  execSync('npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify');
+  execSync('npx tailwindcss -i ./src/input.css -o ./dist/output.css');
   console.log('✅ Tailwind CSS généré avec succès!');
 } catch (error) {
   console.error('❌ Erreur lors de la génération du CSS:', error.message);

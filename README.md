@@ -39,7 +39,7 @@ npm run dev
 ```
 
 ### Structure de projet
-
+```markdown
 UX-Design/
 ├── src/
 │   ├── index.html          # Point d'entrée HTML
@@ -49,7 +49,7 @@ UX-Design/
 ├── package.json            # Dépendances et scripts
 ├── tailwind.config.js      # Configuration Tailwind
 └── postcss.config.js       # Configuration PostCSS
-
+```
 ### 🛠️ Problèmes rencontrés et solutions
 
 Problème 1 : Configuration initiale de Tailwind

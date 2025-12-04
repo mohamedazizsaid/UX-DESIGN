@@ -40,16 +40,15 @@ npm run dev
 
 ### Structure de projet
 
-UX-Fesign/
+UX-Design/
 ├── src/
 │   ├── index.html          # Point d'entrée HTML
-│   ├── input.css           # Fichier CSS source avec directives Tailwind
-├── dist/                    
+│   └── input.css           # Fichier CSS source avec directives Tailwind
+├── dist/
 │   └── output.css          # Fichier CSS généré (automatique)
 ├── package.json            # Dépendances et scripts
 ├── tailwind.config.js      # Configuration Tailwind
 └── postcss.config.js       # Configuration PostCSS
-
 
 ### 🛠️ Problèmes rencontrés et solutions
 

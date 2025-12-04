@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coLearn - Statistiques</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #F5F5F5;
+        }
+        .diagonal-bg {
+              background: linear-gradient(135deg, #2E7581 0%, #5DB5B6 100%);
+            clip-path: ellipse(120% 75% at 50% 0%)
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    
+    <header class="bg-[#2E7581] ">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between max-w-6xl mx-auto">
+                <div class="flex items-center space-x-2">
+                                       <img src="images/votre-logo1.png" alt="coLearn Logo" class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain">
+
+                    <span class="text-xl font-bold text-black">coLearn</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 text-white">
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">Les cours</a>
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">Les tuteurs</a>
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">À propos</a>
+                </div>
+                <a href="./profile.html">
+                    <button class="bg-white/20 backdrop-blur-sm text-white p-2.5 rounded-full hover:bg-white/30 transition">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section with Timeline and Charts -->
+        <section class="diagonal-bg pb-32 pt-8">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-6">
+                    
+                    <!-- Left Sidebar - Timeline -->
+                    <div class="md:col-span-3" >
+                        <div class="bg-white rounded-2xl p-5 shadow-lg"style="height: 550px;">
+                            <!-- Timeline Item 1 -->
+                            <div class="flex items-start space-x-3 mb-4 pb-4 border-b border-gray-100">
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mt-1 flex-shrink-0"></div>
+                                <div class="flex-1">
+                                    <p class="text-xs text-gray-500">03 May 2025</p>
+                                    <p class="text-xs text-gray-400">15:45</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item 2 -->
+                            <div class="flex items-start space-x-3 mb-4 pb-4 border-b border-gray-100">
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mt-1 flex-shrink-0"></div>
+                                <div class="flex-1">
+                                    <p class="text-xs text-gray-500">03 May 2025</p>
+                                    <p class="text-xs text-gray-400">15:45</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item 3 -->
+                            <div class="flex items-start space-x-3 mb-4 pb-4 border-b border-gray-100">
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mt-1 flex-shrink-0"></div>
+                                <div class="flex-1">
+                                    <p class="text-xs text-gray-500">03 May 2025</p>
+                                    <p class="text-xs text-gray-400">15:45</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item 4 -->
+                            <div class="flex items-start space-x-3">
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mt-1 flex-shrink-0"></div>
+                                <div class="flex-1">
+                                    <p class="text-xs text-gray-500">03 May 2025</p>
+                                    <p class="text-xs text-gray-400">15:45</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side - Charts -->
+                    <div class="md:col-span-9 space-y-6">
+                        
+                        <!-- Chart 1 -->
+                        <div class="bg-white rounded-2xl p-6 shadow-lg">
+                            <canvas id="chart1" height="80"></canvas>
+                        </div>
+                        
+                        <!-- Chart 2 -->
+                        <div class="bg-white rounded-2xl p-6 shadow-lg" >
+                            <canvas id="chart2" height="80"></canvas>
+                        </div>
+                        <br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Course Cards Section -->
+        <section class="container mx-auto px-6 pb-20 -mt-20">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-6">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                        <div class="mb-4">
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-2">
+                                <div class="bg-teal-500 h-1.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Signalibout</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">UI/UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                        <div class="mb-4">
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-2">
+                                <div class="bg-teal-500 h-1.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Signalibout</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">UI/UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
+                        <div class="mb-4">
+                            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-2">
+                                <div class="bg-teal-500 h-1.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Signalibout</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">UI/UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <footer class="relative w-full mt-20">
+    <div class="absolute inset-0 flex justify-center -z-10">
+        <div class="w-[150%] h-64 bg-cyan-800"></div>
+    </div>
+    
+    <div class="w-full bg-white shadow-lg px-10 py-12 rounded-br-[100px] rounded-bl-none rounded-tr-none rounded-tl-none">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+            
+            <!-- Logo & Brand -->
+            <div class="flex items-center gap-4">
+                <img src="images/LogoCoLearn.png" alt="Logo">
+                <h2 class="text-4xl font-bold text-black">coLearn</h2>
+            </div>
+            
+            <!-- Resources Links -->
+            <div>
+                <h4 class="text-xl font-bold text-black mb-3">Les ressources</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">À propos</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">les cours</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">les tuteurs</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div class="text-center md:text-right mt-6 md:mt-0">
+                <p class="text-xl font-bold text-black">© 2025 coLearn</p>
+                <p class="text-xl font-bold text-black mt-2">Contactez nous sur</p>
+                
+                <div class="flex justify-center md:justify-end gap-4 mt-4">
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Bottom Teal Bar -->
+    <div class="h-3 bg-gradient-to-r from-teal-600 to-teal-500" style="background: linear-gradient(135deg, #4BA5A6 0%, #5DB5B6 100%);"></div>
+
+    
+    <!-- Chart Configuration -->
+    <script>
+        // Wait for DOM to load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Chart 1 Configuration
+            const ctx1 = document.getElementById('chart1');
+            if (ctx1) {
+                new Chart(ctx1, {
+                    type: 'line',
+                    data: {
+                        labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                        datasets: [
+                            {
+                                label: 'Series 1',
+                                data: [30, 45, 35, 50, 45, 60, 55, 65, 60, 70],
+                                borderColor: '#9CA3AF',
+                                backgroundColor: 'transparent',
+                                tension: 0.4,
+                                borderWidth: 2,
+                                pointRadius: 0
+                            },
+                            {
+                                label: 'Series 2',
+                                data: [20, 35, 30, 45, 40, 50, 45, 55, 50, 60],
+                                borderColor: '#E5E7EB',
+                                backgroundColor: 'transparent',
+                                tension: 0.4,
+                                borderWidth: 2,
+                                pointRadius: 0
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: {
+                                    color: '#F3F4F6'
+                                },
+                                ticks: {
+                                    color: '#9CA3AF'
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: false
+                                },
+                                ticks: {
+                                    color: '#9CA3AF'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Chart 2 Configuration
+            const ctx2 = document.getElementById('chart2');
+            if (ctx2) {
+                new Chart(ctx2, {
+                    type: 'line',
+                    data: {
+                        labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+                        datasets: [
+                            {
+                                label: 'Series 1',
+                                data: [25, 40, 35, 55, 45, 65, 55, 70, 60, 75],
+                                borderColor: '#9CA3AF',
+                                backgroundColor: 'transparent',
+                                tension: 0.4,
+                                borderWidth: 2,
+                                pointRadius: 0
+                            },
+                            {
+                                label: 'Series 2',
+                                data: [15, 30, 25, 40, 35, 50, 45, 55, 50, 60],
+                                borderColor: '#E5E7EB',
+                                backgroundColor: 'transparent',
+                                tension: 0.4,
+                                borderWidth: 2,
+                                pointRadius: 0
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: {
+                                    color: '#F3F4F6'
+                                },
+                                ticks: {
+                                    color: '#9CA3AF'
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: false
+                                },
+                                ticks: {
+                                    color: '#9CA3AF'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

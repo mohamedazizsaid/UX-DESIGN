@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coLearn - Apprenons à vous connaître</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-[#3CBEC4] to-[#256F7C] font-inter">
+    <!-- Navigation -->
+  <header class="bg-[#2E7581] ">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between max-w-6xl mx-auto">
+                <div class="flex items-center space-x-2">
+                                       <img src="images/votre-logo1.png" alt="coLearn Logo" class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain">
+
+                    <span class="text-xl font-bold text-black">coLearn</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 text-white">
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">Les cours</a>
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">Les tuteurs</a>
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">À propos</a>
+                </div>
+                <button class="bg-white/20 backdrop-blur-sm text-white p-2.5 rounded-full hover:bg-white/30 transition">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <h1 class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12">Apprenons à vous connaître!</h1>
+        
+        <!-- Cards Container - Mobile: stacked, Desktop: overlapped -->
+        <div class="flex flex-col lg:block lg:relative lg:mx-auto lg:w-[1100px] lg:h-[625px] gap-6 lg:gap-0 mb-8">
+            
+            <!-- Profil académique - Left Card -->
+            <div class="lg:absolute lg:-left-10 lg:top-0 lg:z-10 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-lg border-2 border-white/80 lg:w-[784px] lg:h-[625px] bg-[#85afd7]/60 w-full">
+                <h2 class="text-white font-semibold mb-2 text-2xl sm:text-3xl lg:text-[32px] font-inter">Profil académique et objectifs</h2>
+                <p class="text-white mb-6 font-inter font-normal text-sm sm:text-[15px]">Complète ton profil pour recevoir des recommandations personnalisées</p>
+                
+                <!-- Niveau d'étude -->
+                <div class="mb-6">
+                    <h3 class="text-white font-semibold mb-3 font-inter text-lg sm:text-xl">Niveau d'étude</h3>
+                    <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-3 sm:gap-4">
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Secondaire</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Préparatoire</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Université</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Post-grade</button>
+                    </div>
+                </div>
+                
+                <!-- Spécialité -->
+                <div class="mb-6">
+                    <h3 class="text-white font-semibold mb-3 font-inter text-lg sm:text-xl">Spécialité</h3>
+                    <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-3 sm:gap-4">
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Sciences</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Humanités</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Arts</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Ingénierie</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[131px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Santé</button>
+                    </div>
+                </div>
+                
+                <!-- Principaux objectifs -->
+                <div>
+                    <h3 class="text-white font-semibold mb-3 font-inter text-lg sm:text-xl">Principaux objectifs</h3>
+                    <div class="flex flex-wrap gap-3 sm:gap-4">
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[200px] h-[38px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Améliorer mes notes</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[274px] h-[38px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Me préparer pour une carrière</button>
+                        <button class="text-white rounded-[10px] transition flex items-center justify-center border border-white/50 w-[40px] h-[37px] bg-[#d9d9d9]/50 font-inter text-xl sm:text-2xl hover:bg-white/30">+</button>
+                        <button class="text-white rounded-[10px] transition border border-white/50 px-4 py-2 sm:w-[289px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Approfondir mes connaissances</button>
+                        <button class="text-white rounded-[10px] transition flex items-center justify-center border border-white/50 px-4 py-2 sm:w-[128px] h-[42px] bg-[#d9d9d9]/50 font-inter font-normal text-sm sm:text-base hover:bg-white/30">Autre <span class="ml-2">+</span></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Préférences et difficultés - Right Card -->
+            <div class="lg:absolute lg:z-20 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-lg border-2 border-white/80 lg:w-[605px] lg:h-[520px] lg:left-[600px] lg:top-[105px] bg-[#619ba5]/60 w-full">
+                <h2 class="text-black font-semibold mb-2 font-inter text-2xl sm:text-3xl lg:text-[32px]">Préférences et difficultés</h2>
+                <p class="text-black mb-6 font-inter font-normal text-sm sm:text-[15px]">Fais glisser les cartes vers les espaces correspondants</p>
+                
+                <!-- Matières préférées 1 -->
+                <div class="mb-6">
+                    <h3 class="text-black font-semibold mb-3 font-inter text-lg sm:text-xl">Matières préférées</h3>
+                    <div class="flex gap-3 sm:gap-4 overflow-x-auto pb-2">
+                        <div class="flex-shrink-0 rounded-xl text-center cursor-move transition flex items-center justify-center border border-white w-[90px] sm:w-[105px] h-[90px] sm:h-[100px] bg-[#d9d9d9]/50 hover:bg-white/40">
+                            <p class="text-gray-800 font-inter font-normal text-sm sm:text-base">Physique</p>
+                        </div>
+                        <div class="flex-shrink-0 rounded-xl text-center cursor-move transition flex items-center justify-center border border-white w-[90px] sm:w-[105px] h-[90px] sm:h-[100px] bg-[#d9d9d9]/50 hover:bg-white/40">
+                            <p class="text-gray-800 font-inter font-normal text-sm sm:text-base">Chimie</p>
+                        </div>
+                        <div class="flex-shrink-0 rounded-xl text-center cursor-move transition flex items-center justify-center border border-white w-[90px] sm:w-[105px] h-[90px] sm:h-[100px] bg-[#d9d9d9]/50 hover:bg-white/40">
+                            <p class="text-gray-800 font-inter font-normal text-sm sm:text-base">Histoire</p>
+                        </div>
+                        <div class="flex-shrink-0 rounded-xl text-center cursor-move transition flex items-center justify-center border border-white w-[90px] sm:w-[105px] h-[90px] sm:h-[100px] bg-[#d9d9d9]/50 hover:bg-white/40">
+                            <p class="text-gray-800 font-inter font-normal text-sm sm:text-base">Littérature</p>
+                        </div>
+                        <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center mt-6 sm:mt-8">
+                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Matières préférées 2 -->
+                <div>
+                    <h3 class="text-black font-semibold mb-3 font-inter text-lg sm:text-xl">Matières avec difficultés</h3>
+                    <div class="flex gap-3 sm:gap-4 overflow-x-auto pb-2">
+                        <div class="flex-shrink-0 rounded-xl text-center cursor-move transition flex items-center justify-center border border-white w-[90px] sm:w-[105px] h-[90px] sm:h-[100px] bg-[#d9d9d9]/50 hover:bg-white/40">
+                            <p class="text-gray-800 font-inter font-normal text-xs sm:text-base leading-tight px-2">Physique quantique</p>
+                        </div>
+                        <div class="flex-shrink-0 rounded-xl text-center cursor-move transition flex items-center justify-center border border-white w-[90px] sm:w-[105px] h-[90px] sm:h-[100px] bg-[#d9d9d9]/50 hover:bg-white/40">
+                            <p class="text-gray-800 font-inter font-normal text-xs sm:text-base leading-tight px-2">Littérature Classique</p>
+                        </div>
+                        <div class="flex-shrink-0 rounded-xl text-center cursor-move transition flex items-center justify-center border border-white w-[90px] sm:w-[105px] h-[90px] sm:h-[100px] bg-[#d9d9d9]/50 hover:bg-white/40">
+                            <p class="text-gray-800 font-inter font-normal text-xs sm:text-base leading-tight px-2">Chimie organique</p>
+                        </div>
+                        <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center">
+                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bouton Suivant -->
+        <div class="flex justify-center sm:justify-end mt-8">
+            <button class="bg-[#044757] hover:bg-[#0a3d3a] text-white rounded-lg font-semibold flex items-center justify-center gap-2 shadow-lg transition text-xl sm:text-2xl lg:text-[32px] font-inter w-full sm:w-auto px-8 sm:px-12 lg:w-[314px] h-[60px] sm:h-[70px] lg:h-[77px]">
+               <a href="./profiling2.html">Suivant </a>                
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <footer class="relative w-full mt-20">
+    <div class="absolute inset-0 flex justify-center -z-10">
+        <div class="w-[150%] h-64 bg-cyan-800"></div>
+    </div>
+    
+    <div class="w-full bg-white shadow-lg px-10 py-12 rounded-br-[100px] rounded-bl-none rounded-tr-none rounded-tl-none">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+            
+            <!-- Logo & Brand -->
+            <div class="flex items-center gap-4">
+                <img src="images/LogoCoLearn.png" alt="Logo">
+                <h2 class="text-4xl font-bold text-black">coLearn</h2>
+            </div>
+            
+            <!-- Resources Links -->
+            <div>
+                <h4 class="text-xl font-bold text-black mb-3">Les ressources</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">À propos</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">les cours</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">les tuteurs</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div class="text-center md:text-right mt-6 md:mt-0">
+                <p class="text-xl font-bold text-black">© 2025 coLearn</p>
+                <p class="text-xl font-bold text-black mt-2">Contactez nous sur</p>
+                
+                <div class="flex justify-center md:justify-end gap-4 mt-4">
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

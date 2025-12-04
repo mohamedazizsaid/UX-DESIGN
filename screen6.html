@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coLearn - Angular Learning Zone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+
+<body class="font-sans antialiased">
+
+  <header class="bg-[#2E7581] ">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between max-w-6xl mx-auto">
+                <div class="flex items-center space-x-2">
+                                       <img src="images/votre-logo1.png" alt="coLearn Logo" class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain">
+
+                    <span class="text-xl font-bold text-black">coLearn</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 text-white">
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">Les cours</a>
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">Les tuteurs</a>
+                    <a href="#" class="hover:text-white/80 transition text-sm font-medium">À propos</a>
+                </div>
+                <button class="bg-white/20 backdrop-blur-sm text-white p-2.5 rounded-full hover:bg-white/30 transition">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="text-center bg-[#2E7581]">
+
+        <section class="container mx-auto px-4 py-12 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                Angular Learning Zone
+            </h1>
+            <p class="text-lg md:text-xl text-white/90 font-semibold max-w-3xl mx-auto">
+                Accédez à tous nos cours, chapitres, examens et quiz pour progresser à votre rythme
+            </p>
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-5  gap-8 mx-auto p-4 max-w-4xl"
+            style=" background-color: rgba(255,252,252,0.15); border-radius: 70px;">
+            <button class="px-4 py-2 bg-white/70 rounded-full  transition">Dashboard</button>
+            <button class="px-4 py-2  rounded hover:bg-white/50 transition"><a href="./DetailCour.html">Chapitres</a></button>
+            <button class="px-4 py-2  rounded hover:bg-white/50 transition">Examens</button>
+            <button class="px-4 py-2  rounded hover:bg-white/50  transition">Quiz</button>
+            <button class="px-4 py-2  rounded hover:bg-white/50 transition">Tests</button>
+        </div>
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full -translate-x-32 -translate-y-32"></div>
+        <div class="absolute top-16 right-20 w-64 h-64 bg-white/10 rounded-full "></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-12 mx-auto gap-8 w-full max-w-5xl">
+
+
+            <div class="bg-[rgba(255,252,252,0.15)] rounded-[20%] p-6 backdrop-blur-md shadow-lg text-white">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-bold text-lg">Progression générale</h3>
+
+                    <i class="fas fa-spinner  text-2xl"></i>
+                </div>
+                <p class="text-sm mb-2">Vous avez complété 40% de votre parcours d'apprentissage</p>
+                <div class="w-full bg-white/20 h-2 rounded-full mb-4">
+                    <div class="bg-teal-300 h-2 rounded-full" style="width:40%"></div>
+                </div>
+                <div class="flex justify-between mb-4 text-sm">
+                    <span>Progression</span>
+                    <span>40%</span>
+                </div>
+                <button
+                    class="w-full bg-white/30 hover:bg-white/50 transition rounded-full py-2 text-teal-700 font-medium flex justify-center items-center">
+                    Continuer <span class="ml-2">→</span>
+                </button>
+            </div>
+
+
+            <div class="bg-[rgba(255,252,252,0.15)] rounded-[20%] p-6 backdrop-blur-md shadow-lg text-white">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-bold text-lg">À faire cette semaine</h3>
+
+                    <i class="fas fa-list-check text-2xl"></i>
+                </div>
+                <ul class="text-sm mb-4 list-disc list-inside">
+                    <li>Test chapitre 4</li>
+                    <li>Lire chapitre 5</li>
+                    <li>Quiz chapitre 5</li>
+                    <li>Test chapitre 5</li>
+                </ul>
+                <button
+                    class="w-full bg-white/30 hover:bg-white/50 transition rounded-full py-2 text-teal-700 font-medium flex justify-center items-center">
+                    Continuer <span class="ml-2">→</span>
+                </button>
+            </div>
+
+
+            <div class="bg-[rgba(255,252,252,0.15)] rounded-[20%] p-6 backdrop-blur-md shadow-lg text-white">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-bold text-lg">Progression générale</h3>
+
+                    <i class="fas fa-chart-line text-2xl"></i>
+                </div>
+                <p class="text-sm mb-2">Score moyen : 66%</p>
+                <div class="w-full bg-white/20 h-2 rounded-full mb-2">
+                    <div class="bg-teal-300 h-2 rounded-full" style="width:66%"></div>
+                </div>
+                <p class="text-sm mb-1">Temps d'étude: 12h cette semaine</p>
+                <p class="text-sm mb-1">Quiz réussis: 24/30</p>
+                <p class="text-sm mb-4">Badges obtenus: 8</p>
+                <button
+                    class="w-full bg-white/30 hover:bg-white/50 transition rounded-full py-2 text-teal-700 font-medium flex justify-center items-center">
+                    Continuer <span class="ml-2">→</span>
+                </button>
+            </div>
+
+
+        </div>
+
+
+
+        <section class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-12 drop-shadow-lg">
+                Cours recommandés pour vous
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <div
+                    class="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="bg-gradient-to-br from-emerald-400 to-teal-500 p-8 flex items-center justify-center">
+                        <div
+                            class="w-32 h-32 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Spring Boot</h3>
+                        <div class="flex items-center gap-4 mb-4 text-sm text-gray-600">
+                            <span class="flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                    </path>
+                                </svg>
+                                16 chapitres
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                6-8 semaines
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-yellow-500 text-lg">★★★★★</span>
+                            <span class="text-gray-600 text-sm">20 évaluations</span>
+                        </div>
+                        <button class="w-full bg-white text-[#3CBEC4] font-bold py-3 px-6 
+rounded-full transition-all duration-300 shadow-md 
+flex items-center justify-center gap-2">
+                            Commencer
+                            <svg class="w-5 h-5" fill="none" stroke="#3CBEC4" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+               
+                <div
+                    class="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="bg-gradient-to-br from-cyan-400 to-blue-500 p-8 flex items-center justify-center">
+                        <div
+                            class="w-32 h-32 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <svg class="w-20 h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="2" />
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" />
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" transform="rotate(60 12 12)" />
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" transform="rotate(120 12 12)" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">React JS</h3>
+                        <div class="flex items-center gap-4 mb-4 text-sm text-gray-600">
+                            <span class="flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                    </path>
+                                </svg>
+                                12 chapitres
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                40 semaines
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-yellow-500 text-lg">★★★★★</span>
+                            <span class="text-gray-600 text-sm">25 évaluations</span>
+                        </div>
+                        <button class="w-full bg-white text-[#3CBEC4] font-bold py-3 px-6 
+rounded-full transition-all duration-300 shadow-md 
+flex items-center justify-center gap-2">
+                            Commencer
+                            <svg class="w-5 h-5" fill="none" stroke="#3CBEC4" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+ <footer class="relative w-full mt-20">
+    <div class="absolute inset-0 flex justify-center -z-10">
+        <div class="w-[150%] h-64 bg-cyan-800"></div>
+    </div>
+    
+    <div class="w-full bg-white shadow-lg px-10 py-12 rounded-br-[100px] rounded-bl-none rounded-tr-none rounded-tl-none">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+            
+            <!-- Logo & Brand -->
+            <div class="flex items-center gap-4">
+                <img src="images/LogoCoLearn.png" alt="Logo">
+                <h2 class="text-4xl font-bold text-black">coLearn</h2>
+            </div>
+            
+            <!-- Resources Links -->
+            <div>
+                <h4 class="text-xl font-bold text-black mb-3">Les ressources</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">À propos</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">les cours</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-teal-600 transition">les tuteurs</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div class="text-center md:text-right mt-6 md:mt-0">
+                <p class="text-xl font-bold text-black">© 2025 coLearn</p>
+                <p class="text-xl font-bold text-black mt-2">Contactez nous sur</p>
+                
+                <div class="flex justify-center md:justify-end gap-4 mt-4">
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="bg-gray-800 text-white p-2 rounded-lg hover:bg-gray-700 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
